@@ -1,0 +1,10 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("savage.cpp"
+ (filename . "c:/programming/C++ file/SDL project/savage boy/code/savage.cpp")
+ (front-context-string . "DrawRectangle(Bu")
+ (rear-context-string . "* (Y - 1);\n	    ")
+ (position . 3415))
+)

@@ -1,0 +1,795 @@
+;; Object code/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "code/"
+  :tables (list 
+   (semanticdb-table "win32_handmade.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("handmade.h" include nil nil [967 988])
+            ("windows.h" include (:system-flag t) nil [990 1010])
+            ("stdio.h" include (:system-flag t) nil [1011 1029])
+            ("malloc.h" include (:system-flag t) nil [1030 1049])
+            ("xinput.h" include (:system-flag t) nil [1050 1069])
+            ("dsound.h" include (:system-flag t) nil [1070 1089])
+            ("win32_handmade.h" include nil nil [1091 1118])
+            ("GlobalRunning" variable (:type ("bool32" type (:type "class") nil nil)) nil [1178 1199])
+            ("GlobalPause" variable (:type ("bool32" type (:type "class") nil nil)) nil [1216 1235])
+            ("GlobalBackbuffer" variable (:type ("win32_offscreen_buffer" type (:type "class") nil nil)) nil [1252 1292])
+            ("GlobalSecondaryBuffer" variable (:type ("LPDIRECTSOUNDBUFFER" type (:type "class") nil nil)) nil [1309 1351])
+            ("GlobalPerfCountFrequency" variable (:type ("int64" type (:type "class") nil nil)) nil [1368 1399])
+            ("X_INPUT_GET_STATE" variable (:constant-flag t) nil [1440 1457])
+            ("x_input_get_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dwUserIndex" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("pState" variable
+                       (:pointer 1
+                        :type ("XINPUT_STATE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ((((0) "WINAPI")) type (:superclasses ("DWORD" type (:type "class") nil nil) :type "typedef") nil nil))
+                nil [1523 1568])
+            ("XInputGetStateStub" function
+               (:arguments 
+                  ( ("dwUserIndex" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("pState" variable
+                       (:pointer 1
+                        :type ("XINPUT_STATE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("WINAPI" type (:type "class") nil nil))
+                nil [1569 1650])
+            ("XInputGetState_" variable
+               (:pointer 1
+                :type ("x_input_get_state" type (:type "class") nil nil))
+                nil [1667 1723])
+            ("XInputGetState" variable (:constant-flag t) nil [1732 1746])
+            ("X_INPUT_SET_STATE" variable (:constant-flag t) nil [1803 1820])
+            ("x_input_set_state" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("dwUserIndex" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("pVibration" variable
+                       (:pointer 1
+                        :type ("XINPUT_VIBRATION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ((((0) "WINAPI")) type (:superclasses ("DWORD" type (:type "class") nil nil) :type "typedef") nil nil))
+                nil [1894 1939])
+            ("XInputSetStateStub" function
+               (:arguments 
+                  ( ("dwUserIndex" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("pVibration" variable
+                       (:pointer 1
+                        :type ("XINPUT_VIBRATION" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type ("WINAPI" type (:type "class") nil nil))
+                nil [1940 2021])
+            ("XInputSetState_" variable
+               (:pointer 1
+                :type ("x_input_set_state" type (:type "class") nil nil))
+                nil [2038 2094])
+            ("XInputSetState" variable (:constant-flag t) nil [2103 2117])
+            ("DIRECT_SOUND_CREATE" variable (:constant-flag t) nil [2143 2162])
+            ("direct_sound_create" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pcGuidDevice" variable (:type ("LPCGUID" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil)
+                    ("ppDS" variable
+                       (:pointer 1
+                        :type ("LPDIRECTSOUND" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("pUnkOuter" variable (:type ("LPUNKNOWN" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) nil))                  
+                :type ((((0) "WINAPI")) type (:superclasses ("HRESULT" type (:type "class") nil nil) :type "typedef") nil nil))
+                nil [2253 2302])
+            ("CatStrings" function
+               (:arguments 
+                  ( ("SourceACount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2329 2349])
+                    ("SourceA" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2350 2364])
+                    ("SourceBCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2376 2396])
+                    ("SourceB" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2397 2411])
+                    ("DestCount" variable (:type ("size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2423 2440])
+                    ("Dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2441 2452]))                  
+                :type "void")
+                nil [2313 2746])
+            ("Win32GetEXEFileName" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2782 2801]))                  
+                :type "void")
+                nil [2757 3281])
+            ("StringLength" function
+               (:arguments 
+                  ( ("String" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3309 3322]))                  
+                :type "int")
+                nil [3292 3414])
+            ("Win32BuildEXEPathFileName" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3456 3475])
+                    ("FileName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3476 3491])
+                    ("DestCount" variable (:type "int") (reparse-symbol arg-sub-list) [3518 3532])
+                    ("Dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3533 3544]))                  
+                :type "void")
+                nil [3425 3722])
+            ("DEBUG_PLATFORM_FREE_FILE_MEMORY" function
+               (:arguments 
+                  ( ("" variable (:type ("DEBUGPlatformFreeFileMemory" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3756 3784]))                  
+                :type "int")
+                nil [3724 3860])
+            ("DEBUG_PLATFORM_READ_ENTIRE_FILE" function
+               (:arguments 
+                  ( ("" variable (:type ("DEBUGPlatformReadEntireFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3894 3922]))                  
+                :type "int")
+                nil [3862 5272])
+            ("DEBUG_PLATFORM_WRITE_ENTIRE_FILE" function
+               (:arguments 
+                  ( ("" variable (:type ("DEBUGPlatformWriteEntireFile" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5307 5336]))                  
+                :type "int")
+                nil [5274 5915])
+            ("Win32GetLastWriteTime" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("Filename" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5955 5970]))                  
+                :type ("FILETIME" type (:type "class") nil nil))
+                nil [5917 6198])
+            ("Win32LoadGameCode" function
+               (:arguments 
+                  ( ("SourceDLLName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6243 6263])
+                    ("TempDLLName" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6264 6282]))                  
+                :type ("win32_game_code" type (:type "class") nil nil))
+                nil [6209 7169])
+            ("Win32UnloadGameCode" function
+               (:arguments 
+                  ( ("GameCode" variable
+                       (:pointer 1
+                        :type ("win32_game_code" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7205 7231]))                  
+                :type "void")
+                nil [7180 7458])
+            ("Win32LoadXInput" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7490 7495]))                  
+                :type "void")
+                nil [7469 8319])
+            ("Win32InitDSound" function
+               (:arguments 
+                  ( ("Window" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8351 8363])
+                    ("SamplesPerSecond" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8364 8387])
+                    ("BufferSize" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8388 8405]))                  
+                :type "void")
+                nil [8330 11367])
+            ("Win32GetWindowDimension" function
+               (:arguments 
+                  ( ("Window" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11425 11437]))                  
+                :type ("win32_window_dimension" type (:type "class") nil nil))
+                nil [11378 11674])
+            ("Win32ResizeDIBSection" function
+               (:arguments 
+                  ( ("Buffer" variable
+                       (:pointer 1
+                        :type ("win32_offscreen_buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [11712 11743])
+                    ("Width" variable (:type "int") (reparse-symbol arg-sub-list) [11744 11754])
+                    ("Height" variable (:type "int") (reparse-symbol arg-sub-list) [11755 11766]))                  
+                :type "void")
+                nil [11685 13100])
+            ("Win32DisplayBufferInWindow" function
+               (:arguments 
+                  ( ("Buffer" variable
+                       (:pointer 1
+                        :type ("win32_offscreen_buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13143 13174])
+                    ("DeviceContext" variable (:type ("HDC" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13202 13220])
+                    ("WindowWidth" variable (:type "int") (reparse-symbol arg-sub-list) [13221 13237])
+                    ("WindowHeight" variable (:type "int") (reparse-symbol arg-sub-list) [13238 13255]))                  
+                :type "void")
+                nil [13111 13716])
+            ("Win32MainWindowCallback" function
+               (:arguments 
+                  ( ("Window" variable (:type ("HWND" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13768 13780])
+                    ("Message" variable (:type ("UINT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13805 13818])
+                    ("WParam" variable (:type ("WPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13843 13857])
+                    ("LParam" variable (:type ("LPARAM" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13882 13896]))                  
+                :type ("CALLBACK" type (:type "class") nil nil))
+                nil [13735 15425])
+            ("Win32ClearBuffer" function
+               (:arguments 
+                  ( ("SoundOutput" variable
+                       (:pointer 1
+                        :type ("win32_sound_output" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15458 15490]))                  
+                :type "void")
+                nil [15436 16399])
+            ("Win32FillSoundBuffer" function
+               (:arguments 
+                  ( ("SoundOutput" variable
+                       (:pointer 1
+                        :type ("win32_sound_output" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16436 16468])
+                    ("ByteToLock" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16469 16486])
+                    ("BytesToWrite" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16487 16506])
+                    ("SourceBuffer" variable
+                       (:pointer 1
+                        :type ("game_sound_output_buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16528 16567]))                  
+                :type "void")
+                nil [16410 17991])
+            ("Win32ProcessKeyboardMessage" function
+               (:arguments 
+                  ( ("NewState" variable
+                       (:pointer 1
+                        :type ("game_button_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18035 18063])
+                    ("IsDown" variable (:type ("bool32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18064 18078]))                  
+                :type "void")
+                nil [18002 18211])
+            ("Win32ProcessXInputDigitalButton" function
+               (:arguments 
+                  ( ("XInputButtonState" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18259 18283])
+                    ("OldState" variable
+                       (:pointer 1
+                        :type ("game_button_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18316 18344])
+                    ("ButtonBit" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18345 18361])
+                    ("NewState" variable
+                       (:pointer 1
+                        :type ("game_button_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18394 18422]))                  
+                :type "void")
+                nil [18222 18590])
+            ("Win32ProcessXInputStickValue" function
+               (:arguments 
+                  ( ("Value" variable (:type ("SHORT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18637 18649])
+                    ("DeadZoneThreshold" variable (:type ("SHORT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18650 18674]))                  
+                :type ("real32" type (:type "class") nil nil))
+                nil [18601 18999])
+            ("Win32GetInputFileLocation" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19041 19060])
+                    ("InputStream" variable (:type ("bool32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19061 19080])
+                    ("SlotIndex" variable (:type "int") (reparse-symbol arg-sub-list) [19107 19121])
+                    ("DestCount" variable (:type "int") (reparse-symbol arg-sub-list) [19122 19136])
+                    ("Dest" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [19137 19148]))                  
+                :type "void")
+                nil [19010 19319])
+            ("Win32GetReplayBuffer" function
+               (:pointer 1
+                :arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19373 19392])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [19393 19405])
+                    ("Index" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [19397 19412]))                  
+                :type ("win32_replay_buffer" type (:type "class") nil nil))
+                nil [19330 19554])
+            ("Win32BeginRecordingInput" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19595 19614])
+                    ("InputRecordingIndex" variable (:type "int") (reparse-symbol arg-sub-list) [19615 19639]))                  
+                :type "void")
+                nil [19565 20362])
+            ("Win32EndRecordingInput" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20401 20420]))                  
+                :type "void")
+                nil [20373 20501])
+            ("Win32BeginInputPlayBack" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [20541 20560])
+                    ("InputPlayingIndex" variable (:type "int") (reparse-symbol arg-sub-list) [20561 20583]))                  
+                :type "void")
+                nil [20512 21295])
+            ("Win32EndInputPlayBack" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21333 21352]))                  
+                :type "void")
+                nil [21306 21430])
+            ("Win32RecordInput" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21463 21482])
+                    ("NewInput" variable
+                       (:pointer 1
+                        :type ("game_input" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21483 21504]))                  
+                :type "void")
+                nil [21441 21622])
+            ("Win32PlayBackInput" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21657 21676])
+                    ("NewInput" variable
+                       (:pointer 1
+                        :type ("game_input" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21677 21698]))                  
+                :type "void")
+                nil [21633 22202])
+            ("Win32ProcessPendingMessages" function
+               (:arguments 
+                  ( ("State" variable
+                       (:pointer 1
+                        :type ("win32_state" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22246 22265])
+                    ("KeyboardController" variable
+                       (:pointer 1
+                        :type ("game_controller_input" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22266 22308]))                  
+                :type "void")
+                nil [22213 26855])
+            ("Win32GetWallClock" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [26896 26901]))                  
+                :type ("LARGE_INTEGER" type (:type "class") nil nil))
+                nil [26857 26993])
+            ("Win32GetSecondsElapsed" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("Start" variable (:type ("LARGE_INTEGER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27032 27052])
+                    ("End" variable (:type ("LARGE_INTEGER" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27053 27071]))                  
+                :type ("real32" type (:type "class") nil nil))
+                nil [26995 27214])
+            ("WinMain" function
+               (:arguments 
+                  ( ("Instance" variable (:type ("HINSTANCE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31090 31109])
+                    ("PrevInstance" variable (:type ("HINSTANCE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31118 31141])
+                    ("CommandLine" variable (:type ("LPSTR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31150 31168])
+                    ("ShowCode" variable (:type "int") (reparse-symbol arg-sub-list) [31177 31190]))                  
+                :type ("CALLBACK" type (:type "class") nil nil))
+                nil [31073 62119]))          
+    :file "win32_handmade.cpp"
+    :pointmax 62120
+    :fsize 63699
+    :lastmodtime '(21652 37950 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("X_INPUT_SET_STATE" (spp-arg-list ("name") 1820 . 1826) . 
+              ((symbol "DWORD" 1827 . 1832) (symbol "WINAPI" 1833 . 1839) (symbol "name" 1840 . 1844) (semantic-list "(DWORD dwUserIndex, XINPUT_VIBRATION *pVibration)" 1844 . 1893)))
+          ("X_INPUT_GET_STATE" (spp-arg-list ("name") 1457 . 1463) . 
+              ((symbol "DWORD" 1464 . 1469) (symbol "WINAPI" 1470 . 1476) (symbol "name" 1477 . 1481) (semantic-list "(DWORD dwUserIndex, XINPUT_STATE *pState)" 1481 . 1522)))
+          ("XInputGetState" . ((symbol "XInputGetState_" 1747 . 1762)))
+          ("XInputSetState" . ((symbol "XInputSetState_" 2118 . 2133)))
+          ("DIRECT_SOUND_CREATE" (spp-arg-list ("name") 2162 . 2168) . 
+              ((symbol "HRESULT" 2169 . 2176) (symbol "WINAPI" 2177 . 2183) (symbol "name" 2184 . 2188) (semantic-list "(LPCGUID pcGuidDevice, LPDIRECTSOUND *ppDS, LPUNKNOWN pUnkOuter)" 2188 . 2252)))
+          )
+
+    )
+   (semanticdb-table "handmade.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("math.h" include (:system-flag t) nil [555 572])
+            ("stdint.h" include (:system-flag t) nil [573 592])
+            ("internal" variable (:constant-flag t) nil [602 610])
+            ("local_persist" variable (:constant-flag t) nil [627 640])
+            ("global_variable" variable (:constant-flag t) nil [657 672])
+            ("Pi32" variable (:constant-flag t) nil [689 693])
+            ("int8" type
+               (:typedef ("int8_t" type (:type "class") nil nil)
+                :superclasses "int8_t"
+                :type "typedef")
+                nil [710 730])
+            ("int16" type
+               (:typedef ("int16_t" type (:type "class") nil nil)
+                :superclasses "int16_t"
+                :type "typedef")
+                nil [731 753])
+            ("int32" type
+               (:typedef ("int32_t" type (:type "class") nil nil)
+                :superclasses "int32_t"
+                :type "typedef")
+                nil [754 776])
+            ("int64" type
+               (:typedef ("int64_t" type (:type "class") nil nil)
+                :superclasses "int64_t"
+                :type "typedef")
+                nil [777 799])
+            ("bool32" type
+               (:typedef ("int32" type (:type "class") nil nil)
+                :superclasses "int32"
+                :type "typedef")
+                nil [800 821])
+            ("uint8" type
+               (:typedef ("uint8_t" type (:type "class") nil nil)
+                :superclasses "uint8_t"
+                :type "typedef")
+                nil [823 845])
+            ("uint16" type
+               (:typedef ("uint16_t" type (:type "class") nil nil)
+                :superclasses "uint16_t"
+                :type "typedef")
+                nil [846 870])
+            ("uint32" type
+               (:typedef ("uint32_t" type (:type "class") nil nil)
+                :superclasses "uint32_t"
+                :type "typedef")
+                nil [871 895])
+            ("uint64" type
+               (:typedef ("uint64_t" type (:type "class") nil nil)
+                :superclasses "uint64_t"
+                :type "typedef")
+                nil [896 920])
+            ("real32" type
+               (:typedef ("float")
+                :superclasses "float"
+                :type "typedef")
+                nil [922 943])
+            ("real64" type
+               (:typedef ("double")
+                :superclasses "double"
+                :type "typedef")
+                nil [944 966])
+            ("Assert" variable (:constant-flag t) nil [1127 1133])
+            ("Kilobytes" variable (:constant-flag t) nil [1162 1171])
+            ("Megabytes" variable (:constant-flag t) nil [1204 1213])
+            ("Gigabytes" variable (:constant-flag t) nil [1255 1264])
+            ("Terabytes" variable (:constant-flag t) nil [1306 1315])
+            ("ArrayCount" variable (:constant-flag t) nil [1358 1368])
+            ("SafeTruncateUInt64" function
+               (:typemodifiers ("inline")
+                :arguments 
+                  ( ("Value" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1492 1505]))                  
+                :type ("uint32" type (:type "class") nil nil))
+                nil [1459 1644])
+            ("thread_context" type
+               (:members 
+                  ( ("Placeholder" variable (:type "int") (reparse-symbol classsubparts) [1674 1690]))                  
+                :type "struct")
+                nil [1646 1693])
+            ("game_offscreen_buffer" type
+               (:members 
+                  ( ("Memory" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [3051 3064])
+                    ("Width" variable (:type "int") (reparse-symbol classsubparts) [3069 3079])
+                    ("Height" variable (:type "int") (reparse-symbol classsubparts) [3084 3095])
+                    ("Pitch" variable (:type "int") (reparse-symbol classsubparts) [3100 3110])
+                    ("BytesPerPixel" variable (:type "int") (reparse-symbol classsubparts) [3115 3133]))                  
+                :type "struct")
+                nil [2939 3136])
+            ("game_sound_output_buffer" type
+               (:members 
+                  ( ("SamplesPerSecond" variable (:type "int") (reparse-symbol classsubparts) [3176 3197])
+                    ("SampleCount" variable (:type "int") (reparse-symbol classsubparts) [3202 3218])
+                    ("Samples" variable
+                       (:pointer 1
+                        :type ("int16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3223 3238]))                  
+                :type "struct")
+                nil [3138 3241])
+            ("game_button_state" type
+               (:members 
+                  ( ("HalfTransitionCount" variable (:type "int") (reparse-symbol classsubparts) [3274 3298])
+                    ("EndedDown" variable (:type ("bool32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3303 3320]))                  
+                :type "struct")
+                nil [3243 3323])
+            ("game_controller_input" type
+               (:members 
+                  ( ("IsConnected" variable (:type ("bool32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3360 3379])
+                    ("IsAnalog" variable (:type ("bool32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3384 3400])
+                    ("StickAverageX" variable (:type ("real32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3409 3430])
+                    ("StickAverageY" variable (:type ("real32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3435 3456])
+                    ("" type
+                       (:members 
+                          ( ("Buttons" variable
+                               (:dereference 1
+                                :type ("game_button_state" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [3486 3516])
+                            ("" type
+                               (:members 
+                                  ( ("MoveUp" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3554 3579])
+                                    ("MoveDown" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3592 3619])
+                                    ("MoveLeft" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3632 3659])
+                                    ("MoveRight" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3672 3700])
+                                    ("ActionUp" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3726 3753])
+                                    ("ActionDown" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3766 3795])
+                                    ("ActionLeft" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3808 3837])
+                                    ("ActionRight" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3850 3880])
+                                    ("LeftShoulder" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3906 3937])
+                                    ("RightShoulder" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3950 3982])
+                                    ("Back" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3996 4019])
+                                    ("Start" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4032 4056])
+                                    ("Terminator" variable (:type ("game_button_state" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4153 4182]))                                  
+                                :type "struct")
+                                (reparse-symbol classsubparts) [3525 4193]))                          
+                        :type "union")
+                        (reparse-symbol classsubparts) [3466 4200]))                  
+                :type "struct")
+                nil [3325 4203])
+            ("game_input" type
+               (:members 
+                  ( ("MouseButtons" variable
+                       (:dereference 1
+                        :type ("game_button_state" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4229 4263])
+                    ("MouseZ" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4268 4297])
+                    ("MouseY" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4268 4297])
+                    ("MouseX" variable (:type ("int32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4268 4297])
+                    ("Controllers" variable
+                       (:dereference 1
+                        :type ("game_controller_input" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4353 4390]))                  
+                :type "struct")
+                nil [4205 4393])
+            ("GetController" function
+               (:pointer 1
+                :typemodifiers ("inline")
+                :arguments 
+                  ( ("Input" variable
+                       (:pointer 1
+                        :type ("game_input" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4438 4456])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4457 4469])
+                    ("ControllerIndex" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4461 4486]))                  
+                :type ("game_controller_input" type (:type "class") nil nil))
+                nil [4394 4651])
+            ("game_memory" type
+               (:members 
+                  ( ("IsInitialized" variable (:type ("bool32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4678 4699])
+                    ("PermanentStorageSize" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4705 4733])
+                    ("PermanentStorage" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [4738 4761])
+                    ("TransientStorageSize" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [4825 4853])
+                    ("TransientStorage" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [4858 4881])
+                    ("DEBUGPlatformFreeFileMemory" variable
+                       (:pointer 1
+                        :type ("debug_platform_free_file_memory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4945 5006])
+                    ("DEBUGPlatformReadEntireFile" variable
+                       (:pointer 1
+                        :type ("debug_platform_read_entire_file" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5011 5072])
+                    ("DEBUGPlatformWriteEntireFile" variable
+                       (:pointer 1
+                        :type ("debug_platform_write_entire_file" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [5077 5140]))                  
+                :type "struct")
+                nil [4653 5143])
+            ("GAME_UPDATE_AND_RENDER" variable (:constant-flag t) nil [5153 5175])
+            ("game_update_and_render" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Thread" variable
+                       (:pointer 1
+                        :type ("thread_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("Memory" variable
+                       (:pointer 1
+                        :type ("game_memory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("Input" variable
+                       (:pointer 1
+                        :type ("game_input" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("Buffer" variable
+                       (:pointer 1
+                        :type ("game_offscreen_buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5295 5342])
+            ("GAME_GET_SOUND_SAMPLES" variable (:constant-flag t) nil [5578 5600])
+            ("game_get_sound_samples" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("Thread" variable
+                       (:pointer 1
+                        :type ("thread_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("Memory" variable
+                       (:pointer 1
+                        :type ("game_memory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil)
+                    ("SoundBuffer" variable
+                       (:pointer 1
+                        :type ("game_sound_output_buffer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) nil))                  
+                :type "void")
+                nil [5709 5756])
+            ("game_state" type
+               (:members 
+                  ( ("ToneHz" variable (:type "int") (reparse-symbol classsubparts) [5792 5803])
+                    ("GreenOffset" variable (:type "int") (reparse-symbol classsubparts) [5808 5824])
+                    ("BlueOffset" variable (:type "int") (reparse-symbol classsubparts) [5829 5844])
+                    ("tSine" variable (:type ("real32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5854 5867])
+                    ("PlayerX" variable (:type "int") (reparse-symbol classsubparts) [5873 5885])
+                    ("PlayerY" variable (:type "int") (reparse-symbol classsubparts) [5890 5902])
+                    ("tJump" variable (:type ("real32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5907 5920]))                  
+                :type "struct")
+                nil [5768 5923])
+            ("HANDMADE_H" variable (:constant-flag t) nil [5933 5943]))          
+    :file "handmade.h"
+    :pointmax 5951
+    :fsize 6176
+    :lastmodtime '(21652 31824 0 0)
+    :unmatched-syntax '((TYPEDEF 5701 . 5708) (TYPEDEF 5287 . 5294))
+    :lexical-table 
+        '(("Megabytes" (spp-arg-list ("Value") 1213 . 1220) . ((semantic-list "(Kilobytes(Value)*1024LL)" 1221 . 1246)))
+          ("global_variable" . ((STATIC "static" 673 . 679)))
+          ("Kilobytes" (spp-arg-list ("Value") 1171 . 1178) . ((semantic-list "((Value)*1024LL)" 1179 . 1195)))
+          ("ArrayCount" (spp-arg-list ("Array") 1368 . 1375) . ((semantic-list "(sizeof(Array) / sizeof((Array)[0]))" 1376 . 1412)))
+          ("Terabytes" (spp-arg-list ("Value") 1315 . 1322) . ((semantic-list "(Gigabytes(Value)*1024LL)" 1323 . 1348)))
+          ("Pi32" . ((number "3.14159265359f" 694 . 708)))
+          ("Gigabytes" (spp-arg-list ("Value") 1264 . 1271) . ((semantic-list "(Megabytes(Value)*1024LL)" 1272 . 1297)))
+          ("Assert" (spp-arg-list ("Expression") 1133 . 1145))
+          ("HANDMADE_H")
+          ("internal" . ((STATIC "static" 611 . 617)))
+          ("GAME_GET_SOUND_SAMPLES" (spp-arg-list ("name") 5600 . 5606) . 
+              ((VOID "void" 5607 . 5611) (symbol "name" 5612 . 5616) (semantic-list "(thread_context *Thread, game_memory *Memory, game_sound_output_buffer *SoundBuffer)" 5616 . 5700)))
+          ("local_persist" . ((STATIC "static" 641 . 647)))
+          ("GAME_UPDATE_AND_RENDER" (spp-arg-list ("name") 5175 . 5181) . 
+              ((VOID "void" 5182 . 5186) (symbol "name" 5187 . 5191) (semantic-list "(thread_context *Thread, game_memory *Memory, game_input *Input, game_offscreen_buffer *Buffer)" 5191 . 5286)))
+          )
+
+    )
+   (semanticdb-table "win32_handmade.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("win32_offscreen_buffer" type
+               (:members 
+                  ( ("Info" variable (:type ("BITMAPINFO" type (:type "class") nil nil)) (reparse-symbol classsubparts) [447 463])
+                    ("Memory" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [468 481])
+                    ("Width" variable (:type "int") (reparse-symbol classsubparts) [486 496])
+                    ("Height" variable (:type "int") (reparse-symbol classsubparts) [501 512])
+                    ("Pitch" variable (:type "int") (reparse-symbol classsubparts) [517 527])
+                    ("BytesPerPixel" variable (:type "int") (reparse-symbol classsubparts) [532 550]))                  
+                :type "struct")
+                nil [334 553])
+            ("win32_window_dimension" type
+               (:members 
+                  ( ("Width" variable (:type "int") (reparse-symbol classsubparts) [591 601])
+                    ("Height" variable (:type "int") (reparse-symbol classsubparts) [606 617]))                  
+                :type "struct")
+                nil [555 620])
+            ("win32_sound_output" type
+               (:members 
+                  ( ("SamplesPerSecond" variable (:type "int") (reparse-symbol classsubparts) [654 675])
+                    ("RunningSampleIndex" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [680 706])
+                    ("BytesPerSample" variable (:type "int") (reparse-symbol classsubparts) [711 730])
+                    ("SecondaryBufferSize" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [735 761])
+                    ("SafetyBytes" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [766 784])
+                    ("tSine" variable (:type ("real32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [789 802]))                  
+                :type "struct")
+                nil [622 949])
+            ("win32_debug_time_marker" type
+               (:members 
+                  ( ("OutputPlayCursor" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [988 1011])
+                    ("OutputWriteCursor" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1016 1040])
+                    ("OutputLocation" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1045 1066])
+                    ("OutputByteCount" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1071 1093])
+                    ("ExpectedFlipPlayCursor" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1098 1127])
+                    ("FlipPlayCursor" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1137 1158])
+                    ("FlipWriteCursor" variable (:type ("DWORD" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1163 1185]))                  
+                :type "struct")
+                nil [951 1188])
+            ("win32_game_code" type
+               (:members 
+                  ( ("GameCodeDLL" variable (:type ("HMODULE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1219 1239])
+                    ("DLLLastWriteTime" variable (:type ("FILETIME" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1244 1270])
+                    ("UpdateAndRender" variable
+                       (:pointer 1
+                        :type ("game_update_and_render" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1374 1414])
+                    ("GetSoundSamples" variable
+                       (:pointer 1
+                        :type ("game_get_sound_samples" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1419 1459])
+                    ("IsValid" variable (:type ("bool32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1465 1480]))                  
+                :type "struct")
+                nil [1190 1483])
+            ("WIN32_STATE_FILE_NAME_COUNT" variable (:constant-flag t) nil [1493 1520])
+            ("win32_replay_buffer" type
+               (:members 
+                  ( ("FileHandle" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1563 1581])
+                    ("MemoryMap" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1586 1603])
+                    ("FileName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1608 1651])
+                    ("MemoryBlock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1656 1674]))                  
+                :type "struct")
+                nil [1530 1677])
+            ("win32_state" type
+               (:members 
+                  ( ("TotalSize" variable (:type ("uint64" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1703 1720])
+                    ("GameMemoryBlock" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol classsubparts) [1725 1747])
+                    ("ReplayBuffers" variable
+                       (:dereference 1
+                        :type ("win32_replay_buffer" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1752 1789])
+                    ("RecordingHandle" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1799 1822])
+                    ("InputRecordingIndex" variable (:type "int") (reparse-symbol classsubparts) [1827 1851])
+                    ("PlaybackHandle" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1857 1879])
+                    ("InputPlayingIndex" variable (:type "int") (reparse-symbol classsubparts) [1884 1906])
+                    ("EXEFileName" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1916 1962])
+                    ("OnePastLastEXEFileNameSlash" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [1967 2001]))                  
+                :type "struct")
+                nil [1678 2004])
+            ("WIN32_HANDMADE_H" variable (:constant-flag t) nil [2014 2030]))          
+    :file "win32_handmade.h"
+    :pointmax 2038
+    :fsize 2126
+    :lastmodtime '(21652 33928 0 0)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("WIN32_STATE_FILE_NAME_COUNT" . ((symbol "MAX_PATH" 1521 . 1529)))
+          ("WIN32_HANDMADE_H")
+          )
+
+    )
+   )
+  :file "!drive_c!programming!C++ file!windows project!handmade app!code!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
