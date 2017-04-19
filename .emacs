@@ -162,3 +162,4 @@
 (add-to-list 'load-path "~/.emacs.d/elpa/airline-themes-1.7")
 (require `airline-themes)
 (load-theme `airline-badwolf)
+(powerline-default-theme)
