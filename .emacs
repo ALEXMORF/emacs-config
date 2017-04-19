@@ -163,3 +163,5 @@
 (require `airline-themes)
 (load-theme `airline-badwolf)
 (powerline-default-theme)
+
+(toggle-frame-fullscreen)
