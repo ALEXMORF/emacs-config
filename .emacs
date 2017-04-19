@@ -4,8 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(ansi-color-names-vector ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#ad7fa8" "#8cc4ff" "#eeeeec"])
- '(custom-enabled-themes (quote (solarized)))
- '(custom-safe-themes (quote ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(custom-safe-themes (quote ("946e871c780b159c4bb9f580537e5d2f7dba1411143194447604ecbaf01bd90c" "962dacd99e5a99801ca7257f25be7be0cebc333ad07be97efd6ff59755e6148f" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(default-frame-alist (quote ((vertical-scroll-bars))))
  '(frame-background-mode (quote dark))
  '(initial-frame-alist (quote ((vertical-scroll-bars))))
@@ -31,7 +30,7 @@
 
 ;;-------------------------------------------------------------------------------- EMACS basic visual & additional functionality -------------------------------------------------------
 (setq make-backup-files nil) ;;backup ~ files removed
-(global-linum-mode t) ;; enable line numbers
+;;(global-linum-mode t) ;; enable line numbers
 
 ;;-------------------------------------------------------------------------------- EMACS language specific & text editing improvements -------------------------------------------------
 
@@ -130,8 +129,6 @@
 (setq ido-everywhere t)
 (ido-mode 1)
 
-(add-hook 'c-mode-common-hook   'hs-minor-mode)
-
 ;;-------------------------------------------------------------------------- shortcut for imenu   --------------------------------------------------------------------------------------
 (define-key global-map "\ej" 'imenu)
 ;;-------------------------------------------------------------------------- enable semantic mode --------------------------------------------------------------------------------------
@@ -148,17 +145,20 @@
   (save-buffer))
 (define-key global-map "\es" 'save-buffer-untabified)
 
-;;-------------------------------------------------------------------------- netoree mode --------------------------------------------------------------------------------------
-(global-set-key [f8] 'neotree-toggle)
-
-
 ;;-------------------------------------------------------------------------- color scheme choice --------------------------------------------------------------------------------------
 (handmade-scheme)
 
-;;-------------------------------------------------------------------------- pascal compilation parser --------------------------------------------------------------------------------------
-(add-hook 'pascal-mode-hook (lambda ()
-                           (add-to-list 'compilation-error-regexp-alist '("^In file \\(.*?\\):\\([0-9]+\\)$" 1 2))
-                           ))
+;;------------------------------------------------------------------------- Grep Command -------------------------------------------------------------------
+(setenv "PATH"
+  (concat
+   ;; Change this with your path to MSYS bin directory
+   "C:\\MinGW\\msys\\1.0\\bin;"
+   (getenv "PATH")))
 
-;;-------------------------------------------------------------------------- Octave mode --------------------------------------------------------------------------------------------
-(add-to-list 'auto-mode-alist '("\\.m\\'" . octave-mode))
+(add-to-list 'load-path "~/.emacs.d/elpa/powerline-2.4")
+(require `powerline)
+(powerline-default-theme)
+
+(add-to-list 'load-path "~/.emacs.d/elpa/airline-themes-1.7")
+(require `airline-themes)
+(load-theme `airline-badwolf)
