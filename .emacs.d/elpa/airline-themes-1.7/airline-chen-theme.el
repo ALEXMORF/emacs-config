@@ -3,7 +3,7 @@
 
 (deftheme airline-chen)
 
-(let ((normal-outer-foreground  "#141413") (normal-outer-background  "#40FF40")
+(let ((normal-outer-foreground  "#141413") (normal-outer-background  "#DEC896")
       (normal-inner-foreground  "#f4cf86") (normal-inner-background  "#45413b")
       (normal-center-foreground "DEC896") (normal-center-background "#242424")
 
