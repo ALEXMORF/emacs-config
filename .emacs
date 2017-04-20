@@ -1,15 +1,28 @@
+
+;; Added by Package.el.  This must come before configurations of
+;; installed packages.  Don't delete this line.  If you don't want it,
+;; just comment it out by adding a semicolon to the start of the line.
+;; You may delete these explanatory comments.
+(package-initialize)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#ad7fa8" "#8cc4ff" "#eeeeec"])
- '(custom-safe-themes (quote ("946e871c780b159c4bb9f580537e5d2f7dba1411143194447604ecbaf01bd90c" "962dacd99e5a99801ca7257f25be7be0cebc333ad07be97efd6ff59755e6148f" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
+ '(ansi-color-names-vector
+   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#ad7fa8" "#8cc4ff" "#eeeeec"])
+ '(custom-safe-themes
+   (quote
+    ("d4199013a5ba813e27f9fcdd9632e629ae55155b9ea945049655868f9d6802c3" "329030b087841121358126705d2cbea4e8bb03f9b2517e4051d6ff23ce51dd5e" "7d74c4507028bafa66a1156c338f717d30ef823229a69145c6fb0d39a1f9ac03" "d1d8b8b403f2cc1eccc8687884f61647a9a0fb384c9f03ae6a6ca6698432c029" "7c1ed27d4220577f9b51174b4e0892d2db04399cb4ed6c30271c5edd5b0b2bd0" "cd15ee5d83973bdef3a8f4667fe768bed2cd9f1a560e6b5a386ef2b1b707fe0b" "2120159f4ddde952b898dbc35e14bb93cbe11ee4eac2500aef098d35bc59df65" "1f8ac746734a024ea0185f9262444395ac731dafe809dfc092204a21aef6324a" "a7eda2d2bb188cff0ca531f21400cdda1086a995ee0e5977b7cee04725554865" "85333bbc9ef841c28c74513c4766df526cf8c64e1d102f2d5b8657ea7a16ac37" "6acf4031c95db1112b9046911e485a91d3141982e2493111a8cc2517dfd8a0a8" "f4de38901fed307bfeb397835a5f69f7eef42cca8b2dba3c79c1e7a610e2689a" "359f3e0fcedb6cb3ccec9b45f08d1dd6e9160e7f64651ccd82a681121007d8ad" "a3aff790f55311775225b37febc73d9f9e18be4da431b27a6053d3baa686c665" "721bb3cb432bb6be7c58be27d583814e9c56806c06b4077797074b009f322509" "946e871c780b159c4bb9f580537e5d2f7dba1411143194447604ecbaf01bd90c" "962dacd99e5a99801ca7257f25be7be0cebc333ad07be97efd6ff59755e6148f" "8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(default-frame-alist (quote ((vertical-scroll-bars))))
  '(frame-background-mode (quote dark))
  '(initial-frame-alist (quote ((vertical-scroll-bars))))
  '(menu-bar-mode nil)
- '(package-archives (quote (("gnu" . "http://elpa.gnu.org/packages/") ("melpa" . "http://stable.melpa.org/packages/"))))
+ '(package-archives
+   (quote
+    (("gnu" . "http://elpa.gnu.org/packages/")
+     ("melpa" . "http://stable.melpa.org/packages/"))))
  '(scroll-bar-mode nil)
  '(send-mail-function (quote mailclient-send-it))
  '(tool-bar-mode nil))
@@ -158,10 +171,10 @@
 (add-to-list 'load-path "~/.emacs.d/elpa/powerline-2.4")
 (require `powerline)
 (powerline-default-theme)
+(setq powerline-default-separator `slant)
 
-(add-to-list 'load-path "~/.emacs.d/elpa/airline-themes-1.7")
 (require `airline-themes)
-(load-theme `airline-badwolf)
+(load-theme `airline-chen)
 (powerline-default-theme)
 
 (toggle-frame-fullscreen)
